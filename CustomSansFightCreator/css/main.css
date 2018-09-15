@@ -1,0 +1,104 @@
+
+
+
+.change {
+  position:fixed;
+  width:30vw;
+  margin:10px 15px;
+  justify-items: flex-end;
+}
+.change button, .tools button {
+  outline: none;
+  border:1px dashed #3690cf;
+  background-color: #fff;
+  color:#444;
+  font-size: 25px;
+  cursor: pointer;
+  padding:5px 10px;
+  transition:all .35s;
+}
+.change button:hover, .tools button:hover {
+  background-color: #ccc;
+  color:#000;
+}
+input {
+  margin:10px 0;
+  width:100%;
+  display: block;
+  box-sizing: border-box;
+  padding:10px 5px;
+}
+input {
+  outline: none;
+  border-radius:2px;
+}
+input.notneed {
+  border:1px dashed #3690cf;
+}
+input.need {
+  border:1px solid #3690cf;
+}
+.input input {
+  width:80%;
+  display: inline-block;
+}
+select {
+  display: block;
+  outline: none;
+  border:1px solid #3690cf;
+  width:100%;
+}
+
+
+table {
+  float: right;
+  max-width: 60vw;
+  margin:25px auto;
+  background-color: #fff;
+  text-align: center;
+  font-size: 20px;
+  border-collapse: collapse;
+}
+table td, table th {
+  padding:10px 15px;
+}
+table thead tr {
+  border-bottom:2px solid #888;
+}
+table tbody tr button {
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  border:none;
+  outline: none;
+  background-color: rgba(0,0,0,0);
+}
+table tbody tr button:hover {
+  background-color: rgba(0,0,0,.2);
+}
+table tbody tr button img {
+  max-width: 100%;
+  max-height: 100%;
+}
+table tbody tr:nth-child(odd){
+  border-bottom:2px solid rgb(231, 83, 45);
+}
+table tbody tr:nth-child(even){
+  border-bottom:2px solid rgb(41, 189, 97);
+}
+
+
+.tools {
+  border : 1px dashed #3690cf;
+  padding:15px;
+  width:30vw;
+  margin:10px auto;
+}
+.tools .title {
+  font-size: 35px;
+  color:#444;
+  margin-bottom:15px;
+}
+.tools button {
+  margin-bottom:15px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Custom Sans Fight Creator</title>
+
+  <link rel="stylesheet" href="/lib/normalize.css">
+  <link rel="stylesheet" href="/css/main.css">
+
+</head>
+<body>
+  
+  <div id="app">
+
+    <div class="change">
+      <input id="name" type="text" placeholder="名字[随意](example)" class="name notneed">
+      <input id="sleep" type="text" placeholder="延迟[秒](0.1)" class="sleep need">
+      <select id="attack" class="attack need">
+        <option :selected="attack.selecting" v-for="attack in attackid" :value="attack.id">{{ attack.name }} // {{ attack.id }}</option>
+      </select>
+      <input id="args" type="text" placeholder="参数(0.1,0.2])" class="args need">
+      <button @click="complete()" class="ok">保存修改</button>
+      <div class="input">
+        <button @click="file()" class="in">导入</button>
+        <input type="file" name="" id="inputfile">
+      </div>
+      <div class="tools">
+        <div class="title">功能</div>
+        <button @click="create()" class="create">导出发布版本</button>
+        <button @click="output()" class="output">导出工程文件[用于导入]</button>
+      </div>
+    </div>
+
+    <table class="result">
+      <thead>
+        <tr>
+          <th>名字</th>
+          <th>延迟</th>
+          <th>攻击</th>
+          <th>参数</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="attack in attacks">
+          <td>{{ attack.name }}</td>
+          <td>{{ attack.sleep }}</td>
+          <td>{{ attack.attack }}</td>
+          <td>{{ attack.args }}</td>
+          <td>
+            <button title="修改" @click="edit()" class="edit"><img src="/imgs/edit.png" alt=""></button>
+            <button title="在当前项的下面插入" class="add" @click="add()"><img src="/imgs/add.png" alt=""></button>
+            <button title="删除此项" class="del" @click="del()"><img src="/imgs/del.png" alt=""></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <script src="/lib/filesaver.js"></script>
+  <script src="/lib/vue.js"></script>
+  <script src="/lib/jquery.js"></script>
+  <script src="/lib/ajax.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

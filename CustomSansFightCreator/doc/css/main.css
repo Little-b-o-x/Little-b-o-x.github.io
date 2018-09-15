@@ -1,0 +1,55 @@
+body {
+  overflow: hidden;
+}
+
+/*  */
+li, blockquote {
+  border:none;
+}
+
+h1 {
+  padding-left:20px;
+  margin:0;
+  padding-top:15px;
+  padding-bottom:15px;
+  border-left: 5px solid #3690cf;
+}
+/*  */
+
+.side-bar {
+  position: fixed;
+  height:100vh;
+  width:25%;
+  background-color: rgba(0,0,0,.8);
+  color:#fff;
+}
+.side-bar .item .iteminitem {
+  font-size: 25px;
+  padding:5px 35px;
+  color:#ccc;
+}
+.side-bar .item .title {
+  cursor:pointer;
+  font-size: 35px;
+  padding:10px 15px;
+  transition:all .35s;
+}
+.side-bar .item .title:hover {
+  background-color: rgba(0,0,0,.15);
+}
+.side-bar .item .iteminitem {
+  transition: all .35s;
+}
+.side-bar .item .iteminitem:hover {
+  cursor:pointer;
+  background-color: rgba(0,0,0,.35);
+}
+
+.view {
+  float: right;
+  width:75%;
+}
+.view iframe {
+  width:100%;
+  height:100vh;
+}
