@@ -1,0 +1,37 @@
+* {
+  font-family: Microsoft YaHei;
+}
+
+.point {
+  font-weight: 800;
+}
+.red {
+  color:red;
+}
+
+.view {
+  width:90%;
+  margin: 25px auto;
+  padding:15px;
+  box-shadow: 0 0 5px #444;
+}
+.view .title {
+  font-size: 30px;
+  text-align: center;
+}
+.view .subtitle {
+  margin:10px 0;
+  font-size: 25px;
+  /* text-align: center; */
+  padding-left:55%;
+}
+.view .author {
+  text-align: center;
+  font-size: 25px;
+  color:#333;
+  margin-bottom:20px;
+}
+.view .content {
+  padding:10px;
+  font-size: 20px;
+}

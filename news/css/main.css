@@ -1,0 +1,45 @@
+body {
+    background-color: #eee;
+}
+.header {
+    background-color: #fff;
+    height:70px;
+    -webkit-box-shadow: 0px 0px 1px #888;
+    -moz-box-shadow: 0px 0px 1px #888;
+    box-shadow: 0px 0px 1px #888;
+}
+.header * {
+    display: inline-block;
+}
+
+.logo {
+    font-size:25px;
+    line-height:70px;
+    margin-left:15px;
+}
+.navs {
+    font-size: 0;
+    float: right;
+    height:70px;
+    line-height:70px;
+}
+.navs .nav {
+    font-size: 25px;
+    height:70px;
+    padding:0 15px;
+    line-height:70px;
+    transition:all .25s;
+}
+.navs .nav:hover, .navs .nav.active {
+    background-color: #3690cf;
+    color:#fff;
+}
+
+.main {
+    display: block;
+    height: calc(100vh - 74px);
+}
+#iframe {
+    width:100%;
+    height:100%;
+}
